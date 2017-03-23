@@ -17,8 +17,6 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  username: hit-ubuntu
-  password:
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
@@ -86,6 +84,14 @@ test:
 #
 production:
   <<: *default
-  database: links_production
-  username: links
-  password: <%= ENV['LINKS_DATABASE_PASSWORD'] %>
+  database: dcfaqbjdk4uip7
+  password: d1dd658bd321e78957e16780bbed2eaa7692e8cf116f90184b816c07987d90ee
+  adapter: Postgresql
+  username: ckxkdqbioxpwzt
+  pool: 5
+  port: 5432
+  host: ec2-54-225-122-119.compute-1.amazonaws.com
+
+
+
+
